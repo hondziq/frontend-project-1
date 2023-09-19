@@ -1,0 +1,208 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.box1 {
+  height: 40rem;
+}
+
+.box1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.box1 h1 {
+  position: absolute;
+  bottom: 35%; /* domyslet pozicovani */
+  right: 20%;
+  color: white;
+  text-align: right;
+}
+
+.box2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.box2-text {
+  max-width: 30rem;
+  max-height: 30rem;
+}
+
+.box2-image {
+  max-width: 30rem;
+  max-height: 30rem;
+}
+
+.box2 img {
+  max-width: 100%;
+  max-height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.box3 {
+  background-color: #33292a;
+  color: white;
+  text-align: center;
+  padding: 2rem 8% 2rem 8%;
+}
+
+.box3-icons {
+  margin-top: 2rem;
+}
+
+.icon {
+  height: 4rem;
+  width: 4rem;
+  filter: invert(100%);
+}
+
+.box4 {
+  padding: 1rem 2rem;
+}
+
+.box4_contentBox {
+  display: block;
+  width: 18rem;
+  height: 15rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.box4 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.box5 {
+  background-color: #644b4f;
+  color: white;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.box5_whereTo {
+  font-size: 3rem;
+  font-weight: bold;
+  min-width: 50%;
+}
+
+.box5_content {
+  min-width: 50%;
+}
+
+.contactButton {
+  border: none;
+  border-radius: 5px;
+  width: 7rem;
+  height: 2rem;
+  font-weight: bold;
+}
+
+.box6 {
+  text-align: center;
+  padding-left: 6%;
+}
+
+.box7 {
+  text-align: center;
+  padding-left: 6%;
+}
+
+#review {
+  margin: 4rem 0;
+  max-width: 20rem;
+}
+
+.roundedPhoto {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%; /* chudák Frank má divnou hlavu */
+}
+
+.box8 img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.box9 {
+  padding: 1rem;
+  height: 5rem;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+}
+
+a {
+  color: #e16151;
+}
+
+a:hover {
+  color: #e9877b;
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 80%;
+    margin-left: 10%;
+  }
+  .box2 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .box3-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .box4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box4_contentBox {
+    margin: 0.25rem;
+    flex-basis: calc(100% / 4);
+  }
+
+  .box5 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .box6 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .box7 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+
+  .box8 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box8 img {
+    max-height: 20rem;
+    width: 50%;
+  }
+}
